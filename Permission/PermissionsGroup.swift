@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class PermissionsGroup {
     let ownerPermissions: Permissions
     let groupPermissions: Permissions
@@ -53,4 +52,5 @@ class PermissionsGroup {
 
         return Int(chmodValue)!
     }
+
 }

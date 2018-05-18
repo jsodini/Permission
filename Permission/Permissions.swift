@@ -36,4 +36,5 @@ class Permissions {
 
         return value
     }
+
 }
