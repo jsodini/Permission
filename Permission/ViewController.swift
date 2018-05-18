@@ -10,6 +10,24 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var ownerRead: NSButton!
+    @IBOutlet weak var ownerWrite: NSButton!
+    @IBOutlet weak var ownerExecute: NSButton!
+    
+    @IBOutlet weak var groupRead: NSButton!
+    @IBOutlet weak var groupWrite: NSButton!
+    @IBOutlet weak var groupExecute: NSButton!
+
+    @IBOutlet weak var otherRead: NSButton!
+    @IBOutlet weak var otherWrite: NSButton!
+    @IBOutlet weak var otherExecute: NSButton!
+
+    @IBOutlet weak var chmodBox: NSTextField!
+
+    @IBAction func updatePermissions(_ sender: Any) {
+
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

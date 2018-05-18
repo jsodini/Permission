@@ -209,7 +209,7 @@
                                 <rect key="frame" x="17" y="46" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="3kt-r2-UW6">
-                                    <rect key="frame" x="2" y="2" width="111" height="98"/>
+                                    <rect key="frame" x="2" y="2" width="110" height="98"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5DS-1B-cvS">
@@ -219,6 +219,9 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="Srw-0B-Hcy"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0G7-5f-SI0">
                                             <rect key="frame" x="18" y="42" width="71" height="18"/>
@@ -227,6 +230,9 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="i4m-ah-ddA"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gcL-cj-wks">
                                             <rect key="frame" x="18" y="22" width="71" height="18"/>
@@ -235,6 +241,9 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="vnz-V1-3bB"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -253,6 +262,9 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="JUe-R4-N32"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ue9-gf-SSv">
                                             <rect key="frame" x="18" y="42" width="71" height="18"/>
@@ -261,14 +273,20 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="RLI-xq-Z2E"/>
+                                            </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5i-pH-ycU">
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gx1-bZ-rxL">
                                             <rect key="frame" x="18" y="22" width="71" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <buttonCell key="cell" type="check" title="Execute" bezelStyle="regularSquare" imagePosition="left" inset="2" id="w89-2s-L4m">
+                                            <buttonCell key="cell" type="check" title="Execute" bezelStyle="regularSquare" imagePosition="left" inset="2" id="vHo-za-erj">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="yKh-g5-XUi"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -287,6 +305,9 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="Syt-cC-bpk"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yrr-BU-QFT">
                                             <rect key="frame" x="18" y="42" width="71" height="18"/>
@@ -295,6 +316,9 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="bAp-oz-ont"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHb-R5-INA">
                                             <rect key="frame" x="18" y="22" width="71" height="18"/>
@@ -303,6 +327,9 @@
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="updatePermissions:" target="XfG-lQ-9wD" id="k64-m5-6nX"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -315,9 +342,24 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <action selector="updatePermissions:" target="XfG-lQ-9wD" id="yPD-DE-BSN"/>
+                                </connections>
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="chmodBox" destination="53k-b7-P9N" id="soD-9w-5sW"/>
+                        <outlet property="groupExecute" destination="Gx1-bZ-rxL" id="KCq-4e-DX3"/>
+                        <outlet property="groupRead" destination="ENb-6j-LgV" id="DbR-KE-76q"/>
+                        <outlet property="groupWrite" destination="Ue9-gf-SSv" id="av8-qJ-jnY"/>
+                        <outlet property="otherExecute" destination="uHb-R5-INA" id="bUW-xy-Ifi"/>
+                        <outlet property="otherRead" destination="f4N-up-1me" id="xbf-ty-Q1d"/>
+                        <outlet property="otherWrite" destination="Yrr-BU-QFT" id="aGb-NP-qJ5"/>
+                        <outlet property="ownerExecute" destination="gcL-cj-wks" id="HOS-gN-zam"/>
+                        <outlet property="ownerRead" destination="5DS-1B-cvS" id="Qi4-Jc-xiJ"/>
+                        <outlet property="ownerWrite" destination="0G7-5f-SI0" id="vNV-dJ-dQw"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
