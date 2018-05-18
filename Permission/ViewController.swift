@@ -39,6 +39,12 @@ class ViewController: NSViewController {
         chmodBox.stringValue = chmodValue
     }
 
+    @IBAction func copyToClipboard(_ sender: Any) {
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+        pasteboard.setString(chmodBox.stringValue, forType: .string)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         updatePermissions(self)
