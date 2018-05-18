@@ -13,24 +13,66 @@ class PermissionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testPermissionValueWhenReadAndWriteAndExecute() {
+        let permissions = Permissions(hasRead: true,
+                                      hasWrite: true,
+                                      hasExecute: true)
+        XCTAssertEqual(7, permissions.value())
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+
+    func testPermissionValueWhenReadAndWrite() {
+        let permissions = Permissions(hasRead: true,
+                                      hasWrite: true,
+                                      hasExecute: false)
+        XCTAssertEqual(6, permissions.value())
     }
-    
+
+    func testPermissionValueWhenReadAndExecute() {
+        let permissions = Permissions(hasRead: true,
+                                      hasWrite: false,
+                                      hasExecute: true)
+        XCTAssertEqual(5, permissions.value())
+    }
+
+    func testPermissionValueWhenReadOnly() {
+        let permissions = Permissions(hasRead: true,
+                                      hasWrite: false,
+                                      hasExecute: false)
+        XCTAssertEqual(4, permissions.value())
+    }
+
+    func testPermissionValueWhenWriteAndExecute() {
+        let permissions = Permissions(hasRead: false,
+                                      hasWrite: true,
+                                      hasExecute: true)
+        XCTAssertEqual(3, permissions.value())
+    }
+
+    func testPermissionValueWhenWriteOnly() {
+        let permissions = Permissions(hasRead: false,
+                                      hasWrite: true,
+                                      hasExecute: false)
+        XCTAssertEqual(2, permissions.value())
+    }
+
+    func testPermissionValueWhenExecuteOnly() {
+        let permissions = Permissions(hasRead: false,
+                                      hasWrite: false,
+                                      hasExecute: true)
+        XCTAssertEqual(1, permissions.value())
+    }
+
+    func testPermissionValueWhenNoAccess() {
+        let permissions = Permissions(hasRead: false,
+                                      hasWrite: false,
+                                      hasExecute: false)
+        XCTAssertEqual(0, permissions.value())
+    }
+
 }

@@ -25,13 +25,23 @@ class ViewController: NSViewController {
     @IBOutlet weak var chmodBox: NSTextField!
 
     @IBAction func updatePermissions(_ sender: Any) {
+        let group = PermissionsGroup.create(ownerRead: ownerRead.state.rawValue == 1,
+                                            ownerWrite: ownerWrite.state.rawValue == 1,
+                                            ownerExecute: ownerExecute.state.rawValue == 1,
+                                            groupRead: groupRead.state.rawValue == 1,
+                                            groupWrite: groupWrite.state.rawValue == 1,
+                                            groupExecute: groupExecute.state.rawValue == 1,
+                                            otherRead: otherRead.state.rawValue == 1,
+                                            otherWrite: otherWrite.state.rawValue == 1,
+                                            otherExecute: otherExecute.state.rawValue == 1)
 
+        let chmodValue = String(group.value())
+        chmodBox.stringValue = chmodValue
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updatePermissions(self)
     }
 
     override var representedObject: Any? {

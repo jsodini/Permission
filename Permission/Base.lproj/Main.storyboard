@@ -209,7 +209,7 @@
                                 <rect key="frame" x="17" y="46" width="115" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="3kt-r2-UW6">
-                                    <rect key="frame" x="2" y="2" width="110" height="98"/>
+                                    <rect key="frame" x="2" y="2" width="111" height="98"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5DS-1B-cvS">

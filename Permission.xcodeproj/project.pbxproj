@@ -13,6 +13,14 @@
 		6AB2116120AF78260083E6DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB2115F20AF78260083E6DE /* Main.storyboard */; };
 		6AB2116D20AF78260083E6DE /* PermissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2116C20AF78260083E6DE /* PermissionTests.swift */; };
 		6AB2117820AF78260083E6DE /* PermissionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2117720AF78260083E6DE /* PermissionUITests.swift */; };
+		6AB2118620AF83E10083E6DE /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2118520AF83E10083E6DE /* Permissions.swift */; };
+		6AB2118720AF83E10083E6DE /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2118520AF83E10083E6DE /* Permissions.swift */; };
+		6AB2118820AF83E10083E6DE /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2118520AF83E10083E6DE /* Permissions.swift */; };
+		6AB2118A20AF87640083E6DE /* PermissionsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2118920AF87640083E6DE /* PermissionsGroup.swift */; };
+		6AB2118B20AF87640083E6DE /* PermissionsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2118920AF87640083E6DE /* PermissionsGroup.swift */; };
+		6AB2118C20AF87640083E6DE /* PermissionsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2118920AF87640083E6DE /* PermissionsGroup.swift */; };
+		6AB2119220AF8D410083E6DE /* PermissionsGroupTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2119120AF8D410083E6DE /* PermissionsGroupTest.swift */; };
+		6AB2119320AF8D410083E6DE /* PermissionsGroupTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB2119120AF8D410083E6DE /* PermissionsGroupTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,9 @@
 		6AB2117320AF78260083E6DE /* PermissionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermissionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB2117720AF78260083E6DE /* PermissionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionUITests.swift; sourceTree = "<group>"; };
 		6AB2117920AF78270083E6DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB2118520AF83E10083E6DE /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		6AB2118920AF87640083E6DE /* PermissionsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsGroup.swift; sourceTree = "<group>"; };
+		6AB2119120AF8D410083E6DE /* PermissionsGroupTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsGroupTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +113,8 @@
 				6AB2115F20AF78260083E6DE /* Main.storyboard */,
 				6AB2116220AF78260083E6DE /* Info.plist */,
 				6AB2116320AF78260083E6DE /* Permission.entitlements */,
+				6AB2118520AF83E10083E6DE /* Permissions.swift */,
+				6AB2118920AF87640083E6DE /* PermissionsGroup.swift */,
 			);
 			path = Permission;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 			children = (
 				6AB2116C20AF78260083E6DE /* PermissionTests.swift */,
 				6AB2116E20AF78260083E6DE /* Info.plist */,
+				6AB2119120AF8D410083E6DE /* PermissionsGroupTest.swift */,
 			);
 			path = PermissionTests;
 			sourceTree = "<group>";
@@ -255,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB2115C20AF78240083E6DE /* ViewController.swift in Sources */,
+				6AB2118620AF83E10083E6DE /* Permissions.swift in Sources */,
+				6AB2118A20AF87640083E6DE /* PermissionsGroup.swift in Sources */,
 				6AB2115A20AF78240083E6DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +279,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB2118720AF83E10083E6DE /* Permissions.swift in Sources */,
+				6AB2118B20AF87640083E6DE /* PermissionsGroup.swift in Sources */,
+				6AB2119220AF8D410083E6DE /* PermissionsGroupTest.swift in Sources */,
 				6AB2116D20AF78260083E6DE /* PermissionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB2118820AF83E10083E6DE /* Permissions.swift in Sources */,
+				6AB2118C20AF87640083E6DE /* PermissionsGroup.swift in Sources */,
+				6AB2119320AF8D410083E6DE /* PermissionsGroupTest.swift in Sources */,
 				6AB2117820AF78260083E6DE /* PermissionUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
